@@ -108,16 +108,23 @@ public class TopRatedFragment extends Fragment
         }
     }
     private void showData(String jsonString) {
-        Gson gson = new Gson();
-        Movie_Skeleton movie2 = gson.fromJson(jsonString, Movie_Skeleton.class);
-        List<Post> posts_rated = movie2.getPosts();
+        try
+        {
+            Gson gson = new Gson();
+            Movie_Skeleton movie2 = gson.fromJson(jsonString, Movie_Skeleton.class);
+            List<Post> posts_rated = movie2.getPosts();
 
-        mAdapter = new CustomAdapter(posts_rated);
-        mAdapter.notifyDataSetChanged();
+            mAdapter = new CustomAdapter(posts_rated);
+            mAdapter.notifyDataSetChanged();
 
 
 
 
-        mRecyclerView.setAdapter(mAdapter);
+            mRecyclerView.setAdapter(mAdapter);
+        }
+        catch (Exception e)
+        {Snackbar.make(getActivity().findViewById(android.R.id.content), "check data connection", Snackbar.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
     }
 }
