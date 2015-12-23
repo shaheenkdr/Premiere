@@ -108,16 +108,25 @@ public class PopularFragment extends Fragment {
         }
     }
     private void showData(String jsonString) {
-        Gson gson = new Gson();
-        Movie_Skeleton movie1 = gson.fromJson(jsonString, Movie_Skeleton.class);
-        List<Post> posts_popular = movie1.getPosts();
+         try
+        {
+            Gson gson = new Gson();
+            Movie_Skeleton movie1 = gson.fromJson(jsonString, Movie_Skeleton.class);
+            List<Post> posts_popular = movie1.getPosts();
 
-        mAdapterPop = new CustomAdapter(posts_popular);
-        mAdapterPop.notifyDataSetChanged();
+            mAdapterPop = new CustomAdapter(posts_popular);
+            mAdapterPop.notifyDataSetChanged();
 
 
 
 
-        mRecyclerViewPop.setAdapter(mAdapterPop);
+            mRecyclerViewPop.setAdapter(mAdapterPop);
+
+        }
+        catch (Exception e)
+        {
+            Snackbar.make(getActivity().findViewById(android.R.id.content), "Check data connection", Snackbar.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
     }
 }
