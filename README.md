@@ -44,7 +44,7 @@ public class Key
 ## Android Developer Nanodegree
 [![udacity][1]][2]
 
-[1]: ../master/art/nanodegree-logo.png
+[1]: https://raw.githubusercontent.com/cahergil/shareablefotos/master/pm/nanodegree-logo.png
 [2]: https://www.udacity.com/course/android-developer-nanodegree--nd801
 
 
