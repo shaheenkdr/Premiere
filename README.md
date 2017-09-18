@@ -1,12 +1,21 @@
 # Premiere
 
-This is the *Popular Movies 1* App , The name of this app is **Premiere**. It displays popular and top-rated movies from TMDB. 
+This is a fully functional and powerful app developed with rich UI designed for movie buffs as part of Udacity's nano degree program. The app provides the user with top rated and popular movies with their ratings and trailers.
+
+## Features
+
+* Discover the most popular, the most rated or the highest rated movies
+* Save favorite movies locally to view them even when offline
+* Watch trailers
+* Read reviews
+
+## Screens
 
 ![alt tag](http://s18.postimg.org/a26th6nuh/DFG_2015_12_23_10_30_07.png)
 
 ![alt tag](http://s3.postimg.org/gub6o3b2r/DFG_2015_12_23_10_29_51.png)
 
-###KEY
+## Work with the Source code
 
 In order to build this successfully, you'll need to obtain your own API key, which is available [here!](https://www.themoviedb.org/documentation/api?language=en)
 You'll need to replace your key in `Premiere/app/src/main/java/nanodegree/premiere/Keys/Key.java`
@@ -24,17 +33,32 @@ public class Key
 }
 ```
 
-###REFERENCES
 
-* [ListView with Gson](https://gist.github.com/Phonbopit/0935541274083f778d6f)
-* [CardView with RecyclerView](http://code.tutsplus.com/tutorials/getting-started-with-recyclerview-and-cardview-on-android--cms-23465)
-* [Fragments](http://developer.android.com/reference/android/app/Fragment.html)
-* [ViewPager](http://developer.android.com/reference/android/support/v4/view/ViewPager.html)
-* [TabbedLayout](http://www.truiton.com/2015/06/android-tabs-example-fragments-viewpager/)
+## Libraries 
 
+* [Apache HTTP](https://hc.apache.org/httpcomponents-client-4.3.x/android-port.html)
+* [GSON](https://github.com/google/gson)
+* [Google design support library](https://developer.android.com/training/material/design-library.html)
+* [Picasso](http://square.github.io/picasso/)
 
-#####Questions asked:
-1. [gson.fromjson](http://stackoverflow.com/questions/34391090/gson-fromjson-causes-nullpointerexception)
-2. [picasso with custom adapter](http://stackoverflow.com/questions/34395777/how-to-use-picasso-with-custom-adapter-for-recyclerview)
-3. [Fragment loading duplicate values](http://stackoverflow.com/questions/34421388/how-to-fix-fragment-loading-duplicate-value)
-4. [non static variable](http://stackoverflow.com/questions/34421910/how-to-make-the-variable-and-method-of-an-adapter-non-static)
+## Android Developer Nanodegree
+[![udacity][1]][2]
+
+[1]: ../master/art/nanodegree-logo.png
+[2]: https://www.udacity.com/course/android-developer-nanodegree--nd801
+
+## License
+
+    Copyright 2015 Shaheen A Kader
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
